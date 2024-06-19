@@ -1,6 +1,8 @@
 import { createSlice, createAsyncThunk } from '@reduxjs/toolkit'
 
-const url = 'http://localhost:3000/graph/scatter-plot'
+const backendURL = import.meta.env.VITE_BACKEND_URL
+
+const url = `${backendURL}graph/scatter-plot`
 
 const initialState = {
     isScatterLoading: true,

@@ -1,6 +1,8 @@
 import { createSlice, createAsyncThunk } from '@reduxjs/toolkit'
 
-const url = 'http://localhost:3000/graph/top-pie-chart'
+const backendURL = import.meta.env.VITE_BACKEND_URL
+
+const url = `${backendURL}graph/top-pie-chart`
 
 const initialState = {
     isPieLoading: true,

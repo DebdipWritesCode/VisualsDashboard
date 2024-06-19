@@ -1,6 +1,7 @@
 import { createSlice, createAsyncThunk } from '@reduxjs/toolkit'
+const backendURL = import.meta.env.VITE_BACKEND_URL
 
-const url = 'http://localhost:3000/graph/line-chart'
+const url = `${backendURL}graph/line-chart`
 
 const initialState = {
     isAreaLoading: true,

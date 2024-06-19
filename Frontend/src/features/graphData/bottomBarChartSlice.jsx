@@ -1,6 +1,8 @@
 import { createSlice, createAsyncThunk } from '@reduxjs/toolkit'
 
-const url = 'http://localhost:3000/graph/bottom-bar-chart'
+const backendURL = import.meta.env.VITE_BACKEND_URL
+
+const url = `${backendURL}graph/bottom-bar-chart`
 
 const initialState = {
     isBottomBarLoading: true,
