@@ -1,12 +1,12 @@
+require('dotenv').config({ path: '../.env' });
 const express = require("express");
 const app = express();
 const mongoose = require("mongoose");
 const cors = require("cors");
 
-const graphRoutes = require("./routes/graph");
+const graphRoutes = require("../routes/graph");
 
-const MONGODB_URI =
-  "mongodb+srv://debdipmukherjee52:ZWRWhheHzesTWpNn@cluster0.wkfyns1.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0";
+const MONGODB_URI = process.env.MONGODB_URI;
 
 app.use(
   cors({
