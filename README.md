@@ -1,7 +1,5 @@
 
 # Data Visualization Dashboard
-
-## Overview
 This project aims to visualize and analyze insights data collected from various sources. The dataset includes information such as intensity, likelihood, relevance, and other metrics related to different topics across regions and countries.
 
 ## Data Source
